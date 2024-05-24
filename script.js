@@ -1,14 +1,34 @@
 // SCROLL
+// Add a scroll event listener to reset navbar height
+window.addEventListener("scroll", function () {
+  var navbar = document.querySelector(".overlap-group");
+  var scrollPosition = window.scrollY;
+
+  // Check if the scroll position is at the top of the page
+  if (scrollPosition === 0) {
+    // Reset navbar height
+    navbar.style.height = "108px";
+  }
+});
 function scrollToFooter() {
   document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
+  resetNavbarHeight();
 }
 
 function scrollToService() {
   document.getElementById("service").scrollIntoView({ behavior: "smooth" });
+  resetNavbarHeight();
 }
 
 function scrollToAbout() {
   document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+  resetNavbarHeight();
+}
+
+// Function to reset navbar height
+function resetNavbarHeight() {
+  var navbar = document.querySelector(".overlap-group");
+  navbar.style.height = "200px";
 }
 
 // WA
