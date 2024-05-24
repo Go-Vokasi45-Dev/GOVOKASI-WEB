@@ -1078,17 +1078,6 @@
   font-style: var(--heading-h1-desktop-font-style);
 }
 
-.desktop .frame-7 {
-  position: absolute;
-  width: 840px;
-  height: 63px;
-  top: 3202px;
-  left: 307px;
-  border-radius: 8px;
-  border: 3px solid;
-  border-color: #f3f3f3;
-}
-
 .desktop .text-wrapper-48 {
   position: absolute;
   width: 756px;
@@ -1111,77 +1100,11 @@
   left: 790px;
 }
 
-.desktop .frame-8 {
-  position: absolute;
-  width: 840px;
-  height: 63px;
-  top: 3334px;
-  left: 307px;
-  border-radius: 8px;
-  border: 3px solid;
-  border-color: #f3f3f3;
-}
-
-.desktop .frame-9 {
-  position: absolute;
-  width: 840px;
-  height: 63px;
-  top: 3466px;
-  left: 307px;
-  border-radius: 8px;
-  border: 3px solid;
-  border-color: #f3f3f3;
-}
-
-.desktop .frame-10 {
-  position: absolute;
-  width: 840px;
-  height: 63px;
-  top: 3598px;
-  left: 307px;
-  border-radius: 8px;
-  border: 3px solid;
-  border-color: #f3f3f3;
-}
-
 .desktop .frame-11 {
   position: absolute;
   width: 840px;
   height: 63px;
   top: 3730px;
-  left: 307px;
-  border-radius: 8px;
-  border: 3px solid;
-  border-color: #f3f3f3;
-}
-
-.desktop .frame-12 {
-  position: absolute;
-  width: 840px;
-  height: 63px;
-  top: 3268px;
-  left: 307px;
-  border-radius: 8px;
-  border: 3px solid;
-  border-color: #f3f3f3;
-}
-
-.desktop .frame-13 {
-  position: absolute;
-  width: 840px;
-  height: 63px;
-  top: 3400px;
-  left: 307px;
-  border-radius: 8px;
-  border: 3px solid;
-  border-color: #f3f3f3;
-}
-
-.desktop .frame-14 {
-  position: absolute;
-  width: 840px;
-  height: 63px;
-  top: 3532px;
   left: 307px;
   border-radius: 8px;
   border: 3px solid;
@@ -1580,6 +1503,127 @@
   top: 876px;
   left: 773px;
   mix-blend-mode: color-burn;
+}
+
+/* FAQ */
+.desktop .frame-7,
+.desktop .frame-8,
+.desktop .frame-9,
+.desktop .frame-10,
+.desktop .frame-12,
+.desktop .frame-13,
+.desktop .frame-14 {
+  position: absolute;
+  width: 840px;
+  height: 63px;
+  border-radius: 8px;
+  border: 3px solid;
+  border-color: #f3f3f3;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.desktop .frame-7:hover,
+.desktop .frame-8:hover,
+.desktop .frame-9:hover,
+.desktop .frame-10:hover,
+.desktop .frame-12:hover,
+.desktop .frame-13:hover,
+.desktop .frame-14:hover {
+  background-color: #f0f0f0;
+}
+
+.desktop .frame-7 {
+  top: 3202px;
+  left: 307px;
+}
+.desktop .frame-8 {
+  top: 3268px;
+  left: 307px;
+}
+.desktop .frame-9 {
+  top: 3334px;
+  left: 307px;
+}
+.desktop .frame-10 {
+  top: 3400px;
+  left: 307px;
+}
+.desktop .frame-12 {
+  top: 3466px;
+  left: 307px;
+}
+.desktop .frame-13 {
+  top: 3532px;
+  left: 307px;
+}
+.desktop .frame-14 {
+  top: 3598px;
+  left: 307px;
+}
+
+.desktop .answer {
+  display: none;
+  width: 100%;
+  padding: 10px;
+  margin-top: 65px;
+  border: 3px solid #f3f3f3;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.desktop .answer.show {
+  display: block;
+}
+
+.desktop .vuesax-outline-arrow {
+  transition: transform 0.3s ease;
+}
+
+.desktop .vuesax-outline-arrow.rotate {
+  transform: rotate(180deg);
+}
+
+/* New CSS for smooth transition */
+.faq-container {
+  position: relative;
+}
+
+.faq-item {
+  position: relative;
+  width: 100%;
+  border: 3px solid #f3f3f3;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: #f0f0f0;
+}
+
+.question {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.answer {
+  display: none;
+  padding: 15px;
+  border-top: 3px solid #f3f3f3;
+  transition: all 0.3s ease;
+}
+
+.answer.show {
+  display: block;
 }
 
 /* CLICKABLE */
