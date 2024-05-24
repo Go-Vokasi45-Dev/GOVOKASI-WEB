@@ -1266,6 +1266,7 @@
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .desktop .text-wrapper-53 {
@@ -1279,6 +1280,7 @@
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .desktop .div-wrapper {

@@ -3,6 +3,14 @@ function scrollToFooter() {
   document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
 }
 
+function scrollToService() {
+  document.getElementById("service").scrollIntoView({ behavior: "smooth" });
+}
+
+function scrollToAbout() {
+  document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+}
+
 // WA
 function redirectToWhatsApp() {
   whatsappUrl = "https://wa.me/6281316653083";
