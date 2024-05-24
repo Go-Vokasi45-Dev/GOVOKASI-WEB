@@ -89,11 +89,14 @@
                 terbaik, kami siap mendampingi Anda setiap langkahnya.
               </p>
             </div>
-            <div class="button-wrapper">
-              <button class="button">
+            <div
+              class="button-wrapper button-clickable"
+              onclick="redirectToWhatsApp()"
+            >
+              <button class="button button-clickable">
                 <div class="button-bond">
                   <img class="img" src="img/ic-baseline-whatsapp.svg" />
-                  <div class="text-wrapper-15">Hubungi Kami</div>
+                  <div class="text-wrapper-15 clickable">Hubungi Kami</div>
                 </div>
               </button>
             </div>
@@ -330,10 +333,16 @@
                 Intern, hingga lolos Intern di Company Partner kami.
               </p>
             </div>
-            <button class="button-bond-wrapper">
-              <div class="button-bond">
+            <button
+              class="button-bond-wrapper button-clickable"
+              onclick="redirectToWhatsApp()"
+            >
+              <div
+                class="button-bond button-clickable"
+                onclick="redirectToWhatsApp()"
+              >
                 <img class="img" src="img/ic-baseline-whatsapp-1.svg" />
-                <div class="text-wrapper-51">Hubungi Kami</div>
+                <div class="text-wrapper-51 clickable">Hubungi Kami</div>
               </div>
             </button>
           </div>
@@ -342,7 +351,7 @@
           <img class="image" src="img/image-1.png" />
           <div class="text-wrapper-52">ABOUT</div>
           <div class="text-wrapper-53">SERVICE</div>
-          <div class="div-wrapper">
+          <div class="div-wrapper clickable" onclick="scrollToFooter()">
             <div class="text-wrapper-54">CONTACT</div>
           </div>
         </div>
@@ -392,7 +401,7 @@
       </div>
     </div>
 
-    <footer>
+    <footer id="footer">
       <div class="footer__container container grid">
         <div class="top-content">
           <div class="logo">
@@ -457,5 +466,6 @@
         </div>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -1582,6 +1582,21 @@
   mix-blend-mode: color-burn;
 }
 
+/* CLICKABLE */
+
+.clickable {
+  cursor: pointer;
+}
+
+.button-clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
 /* Footer */
 
 footer {
